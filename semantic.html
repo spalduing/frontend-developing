@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            background-color: crimson;
+        }
+
+        nav{
+            background-color: aqua;
+        }
+
+        section{
+            background-color: darkgreen;
+            width: 350px;
+            height: 100px;
+        }
+
+        article{
+            background-color: gold;
+        }
+
+        footer{
+            background-color: blueviolet;
+        }
+        .container {
+            border: 1px;
+            border-color: black;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        article{
+            position: relative;
+        }
+        #sectionContainer div{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #superSectionContainer{
+            display: flex;
+            align-content: space-between;
+        }
+
+        #superContainer{
+            height: 525px;
+            width: 1000px;
+            position: absolute;
+            background-color: pink;
+        }
+        body{
+            align-items: center;
+
+        }
+        #superContainer:nth-child(1) p{
+            position: relative;
+            margin-top: 0px;
+            margin-bottom: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="superContainer" class="container" >
+        <p>semantic.html</p>
+        <header class="container">header</header> 
+     
+        <nav class="container">nav bar</nav>
+     
+         <div id="superSectionContainer" class="container">
+     
+             <div id="sectionContainer" class="container">
+                 <section class="container">section 1</section>
+                 <section class="container">section 2</section>
+             </div>
+     
+             <article class="container">
+                <p>article</p>
+                <img src="https://image.shutterstock.com/image-vector/vector-gold-circle-frame-set-260nw-746291695.jpg">
+            </article>
+     
+         </div>
+     
+        <footer class="container">footer</footer>
+    </div>
+</body>
+</html>
